@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    height: 40px;
+    background-color: black;
+}
+#nav{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    list-style-type: none;
+    color: white;
+
+}

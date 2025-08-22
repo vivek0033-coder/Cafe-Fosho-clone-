@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Fo'Sho Café</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
+  <style>
+    *{margin:0; padding:0; box-sizing:border-box; font-family:sans-serif;}
+
+    /* Top strip */
+    .topbar{
+      background:#000;
+      color:#fff;
+      height:42px;
+      display:flex;
+      align-items:center;
+      justify-content:flex-end;
+      padding:0 20px;
+      font-size:14px;
+    }
+    .topbar i{margin-right:6px;}
+
+    /* Header */
+    header{background:#ffcd00; position:sticky; top:0; z-index:1000;}
+    .nav-container{
+      max-width:1200px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:10px 20px;
+    }
+    .brand{display:flex; align-items:center; gap:10px; font-weight:800; font-size:20px;}
+    .logo{width:60px; height:60px; border-radius:50%; background:url('img4.png') center/cover;}
+    
+    nav ul{list-style:none; display:flex; gap:20px;}
+    nav ul li a{
+      text-decoration:none;
+      color:#000;
+      font-weight:600;
+      padding:8px 12px;
+      border-radius:20px;
+      transition:.3s;
+    }
+    nav ul li a:hover{background:#fff; color:#000;}
+
+    .hamburger{display:none; background:none; border:none; font-size:22px; cursor:pointer;}
+
+    /* Drawer for mobile */
+    .drawer{
+      display:none;
+      position:fixed;
+      top:90px; left:0;
+      width:100%;
+      background:#fff;
+      box-shadow:0 4px 10px rgba(0,0,0,.2);
+      z-index:999;
+    }
+    .drawer ul{list-style:none; padding:10px;}
+    .drawer li a{
+      display:block;
+      padding:14px;
+      font-weight:600;
+      color:#000;
+      border-radius:10px;
+    }
+    .drawer li a:hover{background:#f2f2f2;}
+
+    @media(max-width:900px){
+      nav ul{display:none;}
+      .hamburger{display:block;}
+    }
+
+    /* About Page Sections */
+    .bg-img{background:url('img12.jpg') center/cover; height:600px;}
+    .mid-nav{background:#000; color:#fff; text-align:center; padding:40px 20px;}
+    .mid-nav h3{margin-bottom:10px;}
+
+    .mid-section{padding:40px 20px; text-align:center;}
+    .bich-img{width:80%; max-width:900px; height:500px; margin:30px auto; border-radius:12px; overflow:hidden; box-shadow:0 6px 15px rgba(0,0,0,0.2);}
+    .bich-img img{width:100%; height:100%; object-fit:cover; transition:transform .5s;}
+    .bich-img:hover img{transform:scale(1.1);}
+
+    .midke-niche{padding:40px 20px; text-align:center;}
+    .mid-img{width:80%; max-width:800px; height:500px; margin:30px auto; border-radius:12px; overflow:hidden; box-shadow:0 6px 15px rgba(0,0,0,0.2);}
+    .mid-img img{width:100%; height:100%; object-fit:cover; transition:transform .5s;}
+    .mid-img:hover img{transform:scale(1.1);}
+
+    .container{display:flex; gap:20px; justify-content:center; flex-wrap:wrap; margin:40px 0;}
+    .box{flex:1 1 45%; max-width:45%; height:350px; border-radius:10px; overflow:hidden; box-shadow:0 6px 15px rgba(0,0,0,0.2);}
+    .box img{width:100%; height:100%; object-fit:cover; transition:transform .5s;}
+    .box:hover img{transform:scale(1.05);}
+
+    .background-section{
+      background:url('img17.jpg') center/cover fixed;
+      height:400px;
+      color:#fff;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      font-size:2em;
+      font-weight:bold;
+    }
+
+    /* Footer */
+    .footer{background:#000; color:#fff; display:flex; justify-content:space-between; padding:40px 80px; flex-wrap:wrap;}
+    .footer h3{color:#ffc107; margin-bottom:15px;}
+    .footer ul{list-style:none;}
+    .footer ul li{margin:6px 0; cursor:pointer;}
+    .footer ul li:hover{color:#ffc107;}
+    .logo-circle{width:120px; height:120px; border-radius:50%; background:#ffc107; display:flex; justify-content:center; align-items:center; font-weight:800; font-size:22px; color:#000; margin:auto;}
+
+    .last-foot{background:#000; border-top:1px solid #fff; text-align:center; padding:20px; font-size:14px;}
+    .footer-link{color:#fff; text-decoration:none;}
+    .footer-link:hover{color:#ffc107;}
+  </style>
+</head>
+<body>
+
+  <!-- Top strip -->
+  <div class="topbar">
+    <i class="fa-solid fa-user-tie"></i> Franchisee Login • Logout
+  </div>
+
+  <!-- Header/Navbar -->
+  <header>
+    <div class="nav-container">
+      <div class="brand">
+        <div class="logo"></div>
+        Fo'Sho Café
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="#events">EVENTS</a></li>
+          <li><a href="contect.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></button>
+    </div>
+
+    <!-- Drawer (Mobile menu) -->
+    <div class="drawer" id="drawer">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="#events">EVENTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <div class="bg-img"></div>
+
+  <!-- Mid nav text -->
+  <div class="mid-nav">
+    <h3>LOOK INSIDE</h3>
+    <h1>MORE THAN JUST AN AMBIANCE!</h1>
+  </div>
+
+  <!-- Section -->
+  <div class="mid-section">
+    <p>At the heart of The Fo'Sho Café’s inviting charm is its New-York-meets-Karoo décor theme.</p>
+    <div class="bich-img">
+      <img src="img9.jpg" alt="Cafe interior">
+    </div>
+  </div>
+
+  <div class="midke-niche">
+    <p>This much-admired interior design blends industrial elements like copper, stainless steel, and brick walls with earthy tones of wood and stone.</p>
+    <div class="mid-img">
+      <img src="img16.jpg" alt="Cafe seating">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="box"><img src="img8.jpg" alt=""></div>
+    <div class="box"><img src="img10.jpg" alt=""></div>
+  </div>
+
+  <div class="background-section">
+    THE GO-TO SPOT FOR EVERYONE!
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-column">
+      <h3>NAVIGATION</h3>
+      <ul>
+        <li>HOME</li>
+        <li>MENU</li>
+        <li>LOCATIONS</li>
+        <li>REASONS TO VISIT!</li>
+        <li>INSIDE</li>
+        <li>CONTACT US</li>
+        <li>THE DAILY NEWS</li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <div class="logo-circle">Fo'Sho</div>
+    </div>
+    <div class="footer-column">
+      <h3>FRANCHISING</h3>
+      <ul>
+        <li>JOIN US!</li>
+        <li>REASONS TO INVEST</li>
+        <li>FRANCHISE MODEL</li>
+        <li>APPLICATION FORM</li>
+        <li>THE FRANCHISEE EXPERIENCE</li>
+      </ul>
+    </div>
+  </footer>
+  <div class="last-foot">
+    <p>Copyright – 2025 <span class="brand">The Fo'Sho Café</span> |
+      All Rights Reserved |
+      <a href="#" class="footer-link">Privacy Policy</a> |
+      <a href="#" class="footer-link">PAIA Manual</a></p>
+    <p class="design-credit">Website designed by <a href="#" class="footer-link">Oodle Design</a></p>
+  </div>
+
+  <!-- JS for mobile menu -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const drawer = document.getElementById("drawer");
+    let open = false;
+
+    function openDrawer(){
+      drawer.style.display="block";
+      hamburger.innerHTML='<i class="fa-solid fa-xmark"></i>';
+      open=true;
+    }
+    function closeDrawer(){
+      drawer.style.display="none";
+      hamburger.innerHTML='<i class="fa-solid fa-bars"></i>';
+      open=false;
+    }
+
+    hamburger.addEventListener("click",()=>{open?closeDrawer():openDrawer()});
+    drawer.addEventListener("click",e=>{
+      if(e.target.tagName==="A"){closeDrawer();}
+    });
+  </script>
+</body>
+</html>

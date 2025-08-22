@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+  .navbar{
+    height: 47px;
+    background-color: #000000;
+  }
+  .login{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px;
+    margin-right: 170px;
+  }
+  .admin{
+    margin-right: 8px;
+  }
+  .main-nav{
+    height: 100px;
+    background-color: #ffcd00;
+    display: flex;
+    justify-content: flex-end; /* content ko right le jaane ke liye */
+    align-items: center;       /* vertically center karne ke liye */
+    padding-right: 80px; 
+  }
+  .img1{
+    height: 100px;
+    width: 100px;
+    background-image: url(img4.png);
+    background-size: cover;
+    margin-right: 700px;
+  }
+  .img1:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .mini-nav li{
+    padding: 10px 15px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .mini-nav ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .mini-nav li a{
+    color: black;
+    text-decoration: none;
+  }
+  .mini-nav li:hover {
+    background-color: white;
+    color: black;
+  }
+  .bg-img{
+    background-image: url(img12.jpg);
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+  }
+  .mid-nav{
+    height: 150px;
+    background-color: #000000;
+  }
+  .paragraph1{
+    color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .paragraph1 h3{
+    margin-top: 50px;
+  }
+  .paragraph2 h1 {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  }
+  .mid-section{
+    height: 700px;
+  }
+  .mid-section p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .bich-img{
+    height: 600px;
+    width: 900px;
+    background-image: url(img9.jpg);
+    background-size: cover;
+    margin-left: 350px;
+    margin-top: 50px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: background-size 0.5s ease-in-out, opacity 2s ease;
+    animation: zoomFade 2s ease-in-out forwards;
+    opacity: 0;
+}
+.img-inner {
+    height: 100%;
+    width: 100%;
+    background-image: url(img9.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.8s ease; /* smooth transition */
+}
+/* Initial load animation */
+@keyframes zoomFade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* Hover effect */
+.bich-img:hover .img-inner {
+    transform: scale(1.1)
+}
+.midke-niche{
+  height: 800px;
+  width: 100%;
+}
+.para{
+  margin-top: 30px;
+}
+.midke-niche p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mid-img{
+  height: 650px;
+  width: 800px;
+background-image: url(img16.jpg);
+background-size: cover;
+margin-left: 400px;
+margin-top: 50px;
+overflow: hidden;
+border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: background-size 0.5s ease-in-out, opacity 2s ease;
+    animation: zoomFade 2s ease-in-out forwards;
+    opacity: 0;
+}
+.niche-img {
+  height: 100%;
+  width: 100%;
+  background-image: url(img16.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.8s ease; /* smooth transition */
+}
+/* Initial load animation */
+@keyframes zoomFade {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+/* Hover effect */
+.mid-img:hover .niche-img {
+  transform: scale(1.1)
+}
+.big-para{
+  height: 60px;
+}
+.big-para p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mini-pra{
+height: 23px;
+}
+.mini-pra p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  flex: 1 1 45%;
+  max-width: 45%;
+  height: 400px; /* Box height */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Background images */
+.left-box {
+  background-image: url('img8.jpg');
+}
+
+.right-box {
+  background-image: url('img10.jpg');
+}
+
+/* Hover effect */
+.box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.background-section {
+  background-image: url('img17.jpg'); /* Replace with your image path */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.content-section {
+  padding: 50px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+h1 {
+  font-size: 3em;
+}
+.footer {
+  height: 350px;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;  /* ya center, depending on layout */
+  align-items: center;
+  color: white;
+  padding: 0 100px;  /* Space between columns */
+}
+.footer-column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer-column {
+  flex: 1;
+  text-align: center;
+}
+
+.footer h3 {
+  color: #ffc107;
+  margin-bottom: 15px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  margin: 8px;
+}
+.footer ul li:hover {
+  color: #ffc107;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.logo-circle {
+  width: 130px;
+  height: 130px;
+  background-color: #ffc107;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 28px;
+  color: black;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.logo-circle:hover {
+  transform: scale(1.2);
+}
+.last-foot{
+  height: 90px;
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  border-top: 1px solid #fff;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.footer-link:hover {
+  color: #ffc107;
+}
+
