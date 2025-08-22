@@ -3,61 +3,222 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conetct</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="contect.css">
+  <title>Contact</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      font-family: sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f9f9f9;
+    }
+
+    /* Navbar */
+    .navbar {
+      height: 47px;
+      background-color: #000;
+    }
+    .login {
+      color: white;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 15px;
+      margin-right: 5%;
+    }
+    .admin {
+      margin-right: 8px;
+    }
+
+    /* Main Nav */
+    .main-nav {
+      height: 100px;
+      background-color: #ffcd00;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+      flex-wrap: wrap;
+    }
+    .img1 {
+      height: 80px;
+      width: 80px;
+      background-image: url(img4.png);
+      background-size: cover;
+    }
+    .mini-nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+    .mini-nav li a {
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+    }
+
+    /* Hero */
+    .bg-img {
+      background: url(img18.jpg) center/cover no-repeat;
+      height: 400px;
+      width: 100%;
+    }
+
+    .mid-nav {
+      padding: 40px 10px;
+      background: #000;
+      text-align: center;
+      color: #fff;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 40px 20px;
+      background: #fff;
+      gap: 30px;
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .contact-info h2 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      margin: 12px 0;
+      font-size: 16px;
+      color: #444;
+    }
+    .info-item i {
+      margin-right: 10px;
+      color: #ffcd00;
+    }
+
+    .social-media {
+      margin-top: 20px;
+    }
+    .social-media i {
+      font-size: 20px;
+      margin: 0 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .social-media i:hover {
+      color: #ffcd00;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      flex: 1;
+      min-width: 300px;
+      background: #f7f7f7;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .contact-form textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 12px;
+      background: #ffcd00;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #e0b800;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+      }
+      .form-group {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <div class="navbar">
-    <div class="login">
-      <div class="admin">
-        <i class="fa-solid fa-user-tie"></i>
+      <div class="login">
+        <div class="admin"><i class="fa-solid fa-user-tie"></i></div>
+        <p>FRANCHISEE LOGIN + LOGOUT</p>
       </div>
-      <p>FRANCHISEE LOGIN + LOGOUT</p>
     </div>
-    </div>
+
     <div class="main-nav">
       <div class="img1"></div>
-    <div class="mini-nav">
-      <ul>
-<li><a href="index.html"></a></li>
-        <li> <a href="menu.html">MENU</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li></a>Event</li>
-        <li> <a href="contect.html">CONTECT</a></li>
-      </ul>
-    </div>
+      <div class="mini-nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="#">EVENT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
     </div>
   </header>
+
   <div class="bg-img"></div>
+
   <div class="mid-nav">
-  <div class="paragraph1">
     <p>LET'S CONNECT</p>
     <h1>CONTACT US</h1>
   </div>
-</div>
+
   <section class="contact-section">
     <div class="contact-info">
       <h2>Welcome</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-      <div class="info-item">
-        <i class="fas fa-phone"></i>
-        <span>(+91) 9569176794</span>
-      </div>
-      <div class="info-item">
-        <i class="fas fa-envelope"></i>
-        <span>mail@vivek.com</span>
-      </div>
-      <div class="info-item">
-        <i class="fas fa-map-marker-alt"></i>
-        <span>salon Raebarli</span>
-      </div>
-      <div class="info-item">
-        <i class="fab fa-instagram"></i>
-        <span>vivek.com</span>
-      </div>
+      <div class="info-item"><i class="fas fa-phone"></i> (+91) 9569176794</div>
+      <div class="info-item"><i class="fas fa-envelope"></i> mail@vivek.com</div>
+      <div class="info-item"><i class="fas fa-map-marker-alt"></i> Salon, Raebareli</div>
+      <div class="info-item"><i class="fab fa-instagram"></i> vivek.com</div>
 
       <div class="social-media">
         <i class="fab fa-facebook-f"></i>
@@ -67,65 +228,25 @@
     </div>
 
     <div class="contact-form">
-      <form>
+      <form id="myForm">
         <div class="form-group">
           <input type="email" placeholder="Email" required>
           <input type="text" placeholder="Name" required>
         </div>
         <input type="text" placeholder="Phone" required>
         <textarea placeholder="Message" required></textarea>
-        <button type="submit">Submit Button</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   </section>
-  <section class="map-section">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.638396048663!2d80.93916487522215!3d26.85145127668375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd349cd191bf%3A0xf044904a8204c2a9!2sFo&#39;sho%20-%20Pan%20Asian%20%26%20Italian%20Bistro!5e0!3m2!1sen!2sin!4v1747037583354!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </section>
-<footer class="footer">
-  <div class="footer-column">
-    <h3>NAVIGATION</h3>
-    <ul>
-      <li>HOME</li>
-      <li>MENU</li>
-      <li>LOCATIONS</li>
-      <li>REASONS TO VISIT!</li>
-      <li>INSIDE</li>
-      <li>CONTACT US</li>
-      <li>THE DAILY NEWS</li>
-    </ul>
-  </div>
-  
-  <div class="footer-column">
-    <div class="logo-circle">
-      <span>Fo'Sho</span>
-    </div>
-  </div>
-  
-  <div class="footer-column">
-    <h3>FRANCHISING</h3>
-    <ul>
-      <li>JOIN US!</li>
-      <li>REASONS TO INVEST</li>
-      <li>FRANCHISE MODEL</li>
-      <li>APPLICATION FORM</li>
-      <li>THE FRANCHISEE EXPERIENCE</li>
-    </ul>
-  </div>
-</footer>
-<footer>
-  <div class="last-foot">
-  <div class="footer-content">
-    <p>
-      Copyright – 2025 <span class="brand">The Fo'SO Cafe</span> |
-      All Rights Reserved | 
-      <a href="#" class="footer-link">Privacy Policy</a> | 
-      <a href="#" class="footer-link">PAIA Manual</a>
-    </p>
-    <p class="design-credit">
-      Website designed by <a href="#" class="footer-link">Oodle Design</a>
-    </p>
-  </div>
-  </div>
-</footer>
+
+  <script>
+    document.getElementById("myForm").addEventListener("submit", function(e){
+      e.preventDefault(); // form reload होने से रोकेगा
+      alert("✅ Thank you! Your message has been sent successfully.");
+      this.reset(); // form clear कर देगा
+    });
+  </script>
+
 </body>
 </html>
