@@ -168,6 +168,22 @@
       background: #e0b800;
     }
 
+    /* Map Section */
+    .map-section {
+      margin: 40px auto;
+      width: 90%;
+      max-width: 1100px;
+      height: 450px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+    }
+    .map-section iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
     /* Responsive */
     @media(max-width: 768px) {
       .contact-section {
@@ -240,11 +256,16 @@
     </div>
   </section>
 
+  <!-- Map Section -->
+  <section class="map-section">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.638396048663!2d80.93916487522215!3d26.85145127668375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd349cd191bf%3A0xf044904a8204c2a9!2sFo&#39;sho%20-%20Pan%20Asian%20%26%20Italian%20Bistro!5e0!3m2!1sen!2sin!4v1747037583354!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
   <script>
     document.getElementById("myForm").addEventListener("submit", function(e){
-      e.preventDefault(); // form reload होने से रोकेगा
+      e.preventDefault(); 
       alert("✅ Thank you! Your message has been sent successfully.");
-      this.reset(); // form clear कर देगा
+      this.reset(); 
     });
   </script>
 
